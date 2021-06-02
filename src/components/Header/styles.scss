@@ -1,0 +1,70 @@
+.container-header {
+  width: 100%;
+  height: 56px;
+  border-bottom: 1px solid var(--white);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .logo {
+    padding: 0.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+
+    p {
+      font-size: 28px;
+      font-family: "Bangers", cursive;
+      font-weight: bold;
+    }
+  }
+
+  .cart {
+    height: 100%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    a {
+      height: 100%;
+      padding-bottom: 5px;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 0.5rem;
+
+      p {
+        font-weight: bold;
+      }
+    }
+
+    #items-amount {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      padding: 8px;
+
+      position: relative;
+      top: -30px;
+      right: 71px;
+
+      background: var(--white);
+      font-size: 0.75rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

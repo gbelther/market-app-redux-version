@@ -1,0 +1,141 @@
+.container {
+  background: var(--gray-100);
+  width: 30%;
+  min-width: 310px;
+  height: auto;
+  margin: 2rem auto;
+  padding-bottom: 0.5rem;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .product-title {
+    width: 100%;
+
+    border-bottom: 1px solid var(--orange-100);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+
+  img {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .product-onsale {
+    width: 100%;
+    border-top: 1px solid var(--orange-100);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    > p:first-child {
+      font-size: 1.5rem;
+      font-weight: bold;
+
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    > p {
+      text-align: center;
+    }
+  }
+
+  .product-price {
+    width: 100%;
+    height: 4rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    s {
+      font-size: 1.5rem;
+    }
+  }
+
+  .product-to-cart {
+    border-radius: 5px;
+    padding: 0.2rem;
+    height: auto;
+    min-height: 2rem;
+
+    display: flex;
+    gap: 1rem;
+
+    button {
+      background: var(--orange-600);
+      border-radius: 5px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      transition: 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+
+    .product-change-amount-button {
+      width: 45px;
+      border: none;
+    }
+
+    .product-amount-positive {
+      background: var(--green-200);
+      border: none;
+      border-radius: 5px;
+      padding: 0 1rem;
+      max-width: 180px;
+      height: auto;
+      min-height: 2rem;
+
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .product-amount-zero {
+      background: var(--red-200);
+      border: none;
+      border-radius: 5px;
+      padding: 0 1rem;
+      max-width: 180px;
+      height: auto;
+      min-height: 2rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      p {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.container-home {
+  background-color: var(--orange-100);
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  .container-main {
+    background: var(--gray-100);
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    width: auto;
+    max-width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .inputs-wrapper {
+      width: 100%;
+      max-width: 500px;
+      height: 50px;
+      padding-bottom: 1rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        width: 100%;
+        height: 2rem;
+        border: none;
+        padding: 0 0.5rem;
+
+        &:focus {
+          border: 1px solid var(--orange-100);
+        }
+      }
+    }
+
+    .products-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+  }
+}
